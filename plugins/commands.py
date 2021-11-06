@@ -37,7 +37,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ මගේ නිර්මාතෘ  ➕', url=f'http://t.me/viha_is_power')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔍 මගේ group එක', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
@@ -78,7 +78,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ මගේ නිර්මාතෘ ➕', url=f'http://t.me/viha_is_power')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔍 මගේ group එක', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
