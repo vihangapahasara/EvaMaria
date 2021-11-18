@@ -38,7 +38,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ මගේ නිර්මාතෘ  ➕', url=f'http://t.me/viha_is_power')
             ],[
             InlineKeyboardButton('🔍 මගේ group එක', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🤖 share my group', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
