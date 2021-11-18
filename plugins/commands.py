@@ -78,7 +78,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ මගේ නිර්මාතෘ ➕', url=f'http://t.me/viha_is_power')
             ],[
-            InlineKeyboardButton('🔍 මගේ group එක', url=f'https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි_Movie_Group_එකක්_තියනව._Film_එකේ_නම_දැම්ම_ගමන්_Film_එක_දෙන්නව._ඔන්න_Link_එක._ඉක්මනට_Join_වෙන්න),
+            InlineKeyboardButton('🔍 මගේ group එක', url=f'https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි_Movie_Group_එකක්_තියනව._Film_එකේ_නම_දැම්ම_ගමන්_Film_එක_දෙන්නව._ඔන්න_Link_එක._ඉක්මනට_Join_වෙන්න'),
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ share our group ', callback_data='help'),
