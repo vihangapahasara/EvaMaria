@@ -621,7 +621,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🔀1/1",callback_data="pages"),InlineKeyboardButton('🤖 මගේ නිර්මාතෘ වගේම යාළුවා', url='https://t.me/viha_is_power')InlineKeyboardButton('🤖 මගේ නිර්මාතෘ වගේම යාළුවා', url='https://t.me/viha_is_power')]
+            [InlineKeyboardButton(text="🔀1/1",callback_data="pages"),InineKeyboardButton('🤖 මගේ නිර්මාතෘ වගේම යාළුවා', url='https://t.me/viha_is_power')]
         )
     imdb = await get_poster(search) if IMDB else None
     if imdb:
