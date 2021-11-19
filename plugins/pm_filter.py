@@ -80,7 +80,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.",show_alert=True)
+        await query.answer("ඔය මොකද පරණ message එකක් අල්ලාගෙන දගලන්නේ ,අලුත් message එකක් දාහන්🔴.",show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -147,19 +147,19 @@ async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
+        return await query.answer("ඔයා මේ click කරන්නේ පරණ message එකක් උඩ මචෝ.", show_alert=True)
     if int(user) != 0 and query.from_user.id != int(user):
         return await query.answer("okDa", show_alert=True)
     if movie_  == "close_spellcheck":
         return await query.message.delete()
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
+    await query.answer('බලමු මගේ database එකේ තියේද කියල😀...')
     files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
     if files:
         k = (movie, files, offset, total_results)
         await auto_filter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase')
+        k = await query.message.edit('මගේ database එකේ ඕක නැ මෙයාගෙන් පොඩ්ඩක් අහල බලන්න 👉 @viha_is_power')
         await asyncio.sleep(10)
         await k.delete()
 
@@ -416,7 +416,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ මගේ නිර්මාතෘ ➕', url=f'http://t.me/viha_is_Power')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🤖 මගේ නිර්මාතෘ වගේම යාළුවා', url='https://t.me/viha_is_power')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -616,7 +616,7 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
+            [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ඊළඟ ➡⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
         btn.append(
