@@ -617,7 +617,8 @@ async def auto_filter(client, msg, spoll=False):
         BUTTONS[key] = search
         req = message.from_user.id if message.from_user else 0
         btn.append(
-            [InlineKeyboardButton(text=f"📰 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ඊළඟ ➡⏩",callback_data=f"next_{req}_{key}_{offset}"), InlineKeyboardButton('my father', url='https://t.me/viha_is_power'),InlineKeyboardButton('share our group' , url='https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි_Movie_Group_එකක්_තියනව._Film_එකේ_නම_දැම්ම_ගමන්_Film_එක_දෙන්නව._ඔන්න_Link_එක._ඉක්මනට_Join_වෙන්න'),]
+            [InlineKeyboardButton(text=f"📰 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ඊළඟ ➡️⏩",callback_data=f"next_{req}_{key}_{offset}")],
+            [InlineKeyboardButton('my father', url='https://t.me/viha_is_power'),InlineKeyboardButton('share our group' , url='https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි%20Movie%20Group%20එකක්_තියනව.%20Film%20එකේ%20නම%20දැම්ම%20ගමන්%20Film%20එක%20දෙන්නව.%20ඔන්න%20Link%20එක.%20ඉක්මනට%20Join%20වෙන්න'),]
         )
     else:
         btn.append(
