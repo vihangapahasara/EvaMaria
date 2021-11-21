@@ -628,11 +628,7 @@ async def auto_filter(client, msg, spoll=False):
         btn.append(
             [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
         )
-         btn.append(
-
-            [InlineKeyboardButton(text=f"🤖My Father",url="https://t.me/viha_is_power"), InlineKeyboardButton(text="🔗Share Our Group",url=f"https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි%20Movie%20Group%20එකක්_තියනව.%20Film%20එකේ%20නම%20දැම්ම%20ගමන්%20Film%20එක%20දෙන්නව.%20ඔන්න%20Link%20එක.%20ඉක්මනට%20Join%20වෙන්න")]
-
-        )
+         
     imdb = await get_poster(search) if IMDB else None
     if imdb:
         cap = IMDB_TEMPLATE.format(
