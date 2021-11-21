@@ -620,9 +620,15 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text=f"🗓 1/{round(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
-        btn.append(
-            [InlineKeyboardButton(text="🗓 1/1",callback_data="pages")]
-        )
+        buttons = [[
+            InlineKeyboardButton(text="🗓 1/1",callback_data="pages")
+            ],[
+            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤖 මගේ නිර්මාතෘ වගේම යාළුවා', url='https://t.me/viha_is_power')
+            ],[
+            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
+            InlineKeyboardButton('😊 About', callback_data='about')
+        ]]
     imdb = await get_poster(search) if IMDB else None
     if imdb:
         cap = IMDB_TEMPLATE.format(
