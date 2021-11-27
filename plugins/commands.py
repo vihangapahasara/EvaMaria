@@ -69,7 +69,7 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**මගේ update channel එකට join වෙන්න ඔය යටින් තියන මුල්ම button එක click කරන්න,ඊට පස්සේ channel එකකට යයි,එකට join වෙලා back ඇවිත් 'try again' කියන එක ඔබන්න ,එච්චරයි කරන්න තියෙන්නේ (Please Join My Updates Channel to use this Bot!**) ",
+            text="**ඔයා තාම මගේ update channel එකට join වෙලා නැ🤦‍♂️, ඔය යටින් තියන මුල්ම button එක click කරන්න,ඊට පස්සේ channel එකකට යයි,එකට join වෙලා back ඇවිත් 'try again' කියන එක ඔබන්න.(Please Join My Updates Channel to use this Bot!**) ",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
