@@ -40,7 +40,7 @@ async def start(client, message):
             
             InlineKeyboardButton('🤖 share my group', url='https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි_Movie_Group_එකක්_තියනව._Film_එකේ_නම_දැම්ම_ගමන්_Film_එක_දෙන්නව._ඔන්න_Link_එක._ඉක්මනට_Join_වෙන්න')
             ],[
-            InlineKeyboardButton('🏗️My channel' , callback_data='about')
+            InlineKeyboardButton('🏗️My channel' , url=f'http://t.me/Rule_Breakers_main')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
