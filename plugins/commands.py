@@ -35,12 +35,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ මගේ නිර්මාතෘ  ➕', url=f'http://t.me/viha_is_power')
+            InlineKeyboardButton('👥 මගේ නිර්මාතෘ 👥', url=f'http://t.me/viha_is_power')
             ],[
-            InlineKeyboardButton('🔍 මගේ group එක', switch_inline_query_current_chat=''),
+            
             InlineKeyboardButton('🤖 share my group', url='https://t.me/share/url?url=https://t.me/joinchat/Q1uroGQ645U1OTg1&text=සුපිරි_Movie_Group_එකක්_තියනව._Film_එකේ_නම_දැම්ම_ගමන්_Film_එක_දෙන්නව._ඔන්න_Link_එක._ඉක්මනට_Join_වෙන්න')
             ],[
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('🏗️My channel' , callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
